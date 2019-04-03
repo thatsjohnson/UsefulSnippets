@@ -18,11 +18,11 @@ namespace FluentCreativity.Core
         /// <param name="Value"></param>
         /// <param name="Append"></param>
         /// <returns></returns>
-        public static string Append(this string Value, params string[] Append)
+        public static string Append(this string value, params string[] append)
         {
-            var Result = Value;
-            Append.ForEach(i => Result += i);
-            return Result;
+            var result = value;
+            append.ForEach(i => result += i);
+            return result;
         }
 
         /// <summary>
@@ -260,11 +260,11 @@ namespace FluentCreativity.Core
         /// <param name="Value"></param>
         /// <param name="Prepend"></param>
         /// <returns></returns>
-        public static string Prepend(this string Value, params string[] Prepend)
+        public static string Prepend(this string value, params string[] prepend)
         {
-            var Result = string.Empty;
-            Prepend.ForEach(i => Result += i);
-            return Result + Value;
+            var result = string.Empty;
+            prepend.ForEach(i => result += i);
+            return result + value;
         }
 
         /// <summary>
